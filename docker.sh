@@ -21,10 +21,10 @@ sleep 15
 sudo docker exec -i ByteGuard mysql -u root -paluno < /home/ubuntu/docker-scripts-repo/script.sql
 echo "Script SQL executado com sucesso!"
 # Dar permissão de execução ao arquivo java.sh
-echo "Dando permissão de execução ao arquivo java.sh..."
-chmod +x java.sh
+echo "Dando permissão de execução ao arquivo install_java.sh..."
+chmod +x install_java.sh
 echo "Permissão concedida com sucesso!"
 # Executar o arquivo java.sh
-echo "Executando o arquivo install-java.sh..."
-./install-java.sh
-echo "Arquivo install-java.sh executado com sucesso!"
+echo "Executando o arquivo install_java.sh..."
+./install_java.sh
+echo "Arquivo install_java.sh executado com sucesso!"
