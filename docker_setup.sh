@@ -14,10 +14,12 @@ sudo docker pull mysql:5.7
 sudo docker run -d -p 3306:3306 --name magister -e "MYSQL_ROOT_PASSWORD=aluno" mysql:5.7
 
 # Executar o script SQL dentro do container MySQL
-sudo docker exec -i magister mysql -u root -paluno < /home/ubuntu/Assistentes-app/script.sql
+# sudo docker exec -i magister mysql -u root -paluno < /home/ubuntu/banco-de-dados/script.sql
 
 # Dar permissão de execução ao arquivo install_java.sh
-chmod +x install_java.sh
+# chmod +x install_java.sh
 
 # Executar o arquivo java.sh
-./install_java.sh
+# ./install_java.sh
+
+

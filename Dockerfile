@@ -2,7 +2,7 @@
 FROM mysql:5.7
 
 # Copie o arquivo SQL para dentro do container
-COPY script.sql /docker-entrypoint-initdb.d/
+COPY banco-de-dados/script.sql /docker-entrypoint-initdb.d/
 
 # Defina a variável de ambiente para a senha do root
 ENV MYSQL_ROOT_PASSWORD=aluno
