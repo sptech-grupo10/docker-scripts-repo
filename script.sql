@@ -52,7 +52,7 @@ create table TipoUsuario (
     descTipoUsuario varchar(45)
 );
 
-insert into  tipoUsuario
+insert into  TipoUsuario
     values (null, 'Empresa'),
             (null, 'Lanhouse');
 
