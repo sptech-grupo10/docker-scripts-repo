@@ -65,7 +65,7 @@ create table Usuario(
     fkEmpresa int,
     fkLanhouse int,
     fkTipoUsuario int,
-    constraint fkUsuarioLanhouse foreign key (fkLanhouse) references Lanhouse(idLanHouse),
+    constraint fkUsuarioLanhouse foreign key (fkLanhouse) references LanHouse(idLanHouse),
     constraint fkEmpresaUsuario foreign key (fkEmpresa) references Empresa(idEmpresa),
     constraint fkTipoUsuarioUsuario foreign key (fkTipoUsuario) references TipoUsuario(idTipoUsuario)
 );
