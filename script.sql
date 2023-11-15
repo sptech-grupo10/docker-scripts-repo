@@ -1,5 +1,3 @@
-drop database ByteGuard;
-
 create database ByteGuard;
 
 use ByteGuard;
