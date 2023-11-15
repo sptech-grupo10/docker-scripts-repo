@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # URL do arquivo JAR no GitHub
-jar_url="https://github.com/sptech-grupo10/Java/raw/main/target/jar-byteguard-1.0-SNAPSHOT.jar"
+jar_url="https://github.com/sptech-grupo10/Java/raw/main/target/jar-byteguard-1.0-SNAPSHOT-jar-with-dependencies.jar"
 
 # Nome do arquivo JAR após o download
-jar_nome="jar-byteguard-1.0-SNAPSHOT.jar"
+jar_nome="jar-byteguard-1.0-SNAPSHOT-jar-with-dependencies.jar"
 
 echo "Agora iremos verificar se você já possui o Java instalado, aguarde um instante..."
 sleep 5
