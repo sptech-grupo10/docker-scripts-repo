@@ -9,7 +9,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 # Baixar a imagem do MySQL 5.7
 echo "Baixando a imagem do MySQL 5.7..."
-sudo docker pull mysql:5.7
+sudo docker pull mysql:8.0
 echo "Imagem do MySQL 5.7 baixada com sucesso!"
 # Criar e executar o container MySQL
 echo "Criando e executando o container MySQL..."
