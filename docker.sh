@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Instalando o Docker"
 sudo apt install docker.io
 echo "Docker instalado com sucesso"
