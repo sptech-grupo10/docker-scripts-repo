@@ -1,3 +1,4 @@
+#!/bin/bash
 jar_url="https://github.com/sptech-grupo10/Java/raw/main/target/jar-byteguard-1.0-SNAPSHOT-jar-with-dependencies.jar"
 
 jar_nome="jar-byteguard-1.0-SNAPSHOT-jar-with-dependencies.jar"
