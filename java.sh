@@ -21,9 +21,11 @@ if ! command -v java &> /dev/null; then
         sudo apt update -y
 
         # Instalação do Java
-        if [ $VERSAO -eq 17 ]; then
+        VERSAO=$(javac -version 2>&1)
+        if [ "$VERSAO" == "javac 17.0.8.1" ]; then
             echo "Preparando para instalar a versão 17 do Java. Lembre-se de confirmar a instalação quando necessário!"
             sudo apt-get install openjdk-17-jdk -y
+            sleep 7
             clear
             echo "Java instalado com sucesso!"
             echo "Vamos atualizar os pacotes..."

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Mensagem informativa sobre a instalação do Docker
+sudo apt update && sudo apt upgrade
 chmod +x wizard.sh
 chmod +x script.sql
 chmod +x docker.sh
@@ -69,7 +70,7 @@ if [ "$resposta3" = "S" ] || [ "$resposta3" = "s" ]; then
         exit 1
     fi
 else
-    echo "Container MySQL não criado!"
+    echo "ué!"
     echo "Finalizando processo"
     exit 1
 fi
