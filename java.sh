@@ -10,7 +10,8 @@ if ! command -v java &> /dev/null; then
     echo "Você ainda não possui o Java instalado."
     echo "Confirme se deseja instalar o Java (S/N)?"
     read inst
-    if [ "$inst" == "S" || "$inst" == "S" ]; then
+    if [ "$inst" == "S" ] || [ "$inst" == "s" ]; then
+
         echo "Ok! Você escolheu instalar o Java."
         echo "Adicionando o repositório..."
         sleep 7
