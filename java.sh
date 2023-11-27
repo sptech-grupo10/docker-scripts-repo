@@ -26,7 +26,6 @@ if ! command -v java &> /dev/null; then
             echo "Preparando para instalar a versão 17 do Java. Lembre-se de confirmar a instalação quando necessário!"
             sudo apt-get install openjdk-17-jdk -y
             sleep 7
-            clear
             echo "Java instalado com sucesso!"
             echo "Vamos atualizar os pacotes..."
             sudo apt update && sudo apt upgrade -y
