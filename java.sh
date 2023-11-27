@@ -10,7 +10,7 @@ if ! command -v java &> /dev/null; then
     echo "Você ainda não possui o Java instalado."
     echo "Confirme se deseja instalar o Java (S/N)?"
     read inst
-    if [ "$inst" == "S" ]; then
+    if [ "$inst" == "S" || "$inst" == "S" ]; then
         echo "Ok! Você escolheu instalar o Java."
         echo "Adicionando o repositório..."
         sleep 7
@@ -22,13 +22,15 @@ if ! command -v java &> /dev/null; then
         # Instalação do Java
         VERSAO=$(javac -version 2>&1)
         if [ "$VERSAO" == "javac 17.0.8.1" ]; then
+        echo "voce ja possui a versão correta do java"
+        fi
+        else
             echo "Preparando para instalar a versão 17 do Java. Lembre-se de confirmar a instalação quando necessário!"
             sudo apt-get install openjdk-17-jdk -y
             sleep 7
             echo "Java instalado com sucesso!"
             echo "Vamos atualizar os pacotes..."
             sudo apt update && sudo apt upgrade -y
-        fi
     else
         echo "Você optou por não instalar o Java no momento."
     fi
