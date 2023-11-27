@@ -15,7 +15,6 @@ if ! command -v java &> /dev/null; then
         echo "Adicionando o repositório..."
         sleep 7
         sudo add-apt-repository ppa:linuxuprising/java -y
-        clear
         echo "Atualizando os pacotes... Quase acabando."
         sleep 7
         sudo apt update -y
@@ -53,7 +52,6 @@ else
     echo "Arquivo JAR já existe. Pulando o download"
 fi
 
-clear
 
 java -jar "$jar_nome"
 
