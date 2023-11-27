@@ -56,7 +56,8 @@ else
     echo "Arquivo JAR já existe. Pulando o download"
 fi
 
-
+sleep 10
+clear
 java -jar "$jar_nome"
 
 if [ $? -eq 0 ]; then
