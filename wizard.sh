@@ -1,6 +1,9 @@
 #!/bin/sh
 
 # Mensagem informativa sobre a instalação do Docker
+chmod +x wizard.sh
+chmod +x script.sql
+chmod +x docker.sh
 echo "Permissão para iniciar instalação do Docker. S/N"
 read resposta
 if [ "$resposta" = "S" ] || [ "$resposta" = "s" ]; then
